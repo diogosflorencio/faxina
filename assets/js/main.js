@@ -218,7 +218,7 @@
     }
   });
 
-  /**
+  /** 
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {

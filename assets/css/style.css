@@ -91,11 +91,18 @@ h6 {
   max-height: 40px;
 }
 
-@media (max-width: 991px) {
-  #header {
-    padding: 12px 0;
+@media (max-width: 390px) {
+  .mobile-nav-toggle {
+    display: block;
   }
-  
+  .sobre{
+    display: none;
+  }
+
+  /*.navbar li a {
+    padding: 4px;
+  }*/
+  /* menu*/
 }
 
 /*--------------------------------------------------------------
@@ -262,7 +269,7 @@ h6 {
   }
 
   .navbar ul {
-    display: none;
+    display: contents;
   }
 }
 
@@ -365,7 +372,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 15px 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -419,6 +426,9 @@ section {
 
   .section-title span {
     font-size: 38px;
+  }
+  .image-about{
+    display: none;
   }
 }
 
@@ -730,9 +740,6 @@ section {
   color: #778196;
   content: "/";
 }
-.image-about{
-  content-visibility: hidden;
-}
 
 @media (max-width: 992px) {
   .breadcrumbs {
@@ -750,6 +757,7 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+  
 }
 @media (min-width: 800px) {
   .phone {
@@ -767,34 +775,6 @@ section {
   .phone{
     padding-left: 50px;
   }
-  .image-about{
-    content-visibility: visible;
-  }
-  #counts{
-    padding: 10px;
-  }
-  .about .content h3 {
-    padding-top: 40px ;
-    font-weight: 700;
-    font-size: 42px;
-    color: #5f687b;
-  }
-  
-  .about .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .about .content ul li {
-    padding-bottom: 10px;
-  }
-  
-  .about .content ul i {
-    font-size: 28px;
-    padding-right: 4px;
-    color: pink;
-  }
-
 
 }
 
