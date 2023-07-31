@@ -91,7 +91,7 @@ h6 {
   max-height: 40px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 575px) {
   .mobile-nav-toggle {
     display: block;
   }
