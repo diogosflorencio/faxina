@@ -98,7 +98,6 @@ h6 {
   .sobre{
     display: none;
   }
-
   /*.navbar li a {
     padding: 4px;
   }*/
@@ -486,7 +485,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  padding-top: 20px ;
+  padding-top: 0px ;
   font-weight: 700;
   font-size: 32px;
   color: #5f687b;
@@ -775,7 +774,23 @@ section {
   .phone{
     padding-left: 50px;
   }
-
+  .about .content h3 {
+    padding-top: 20px ;
+    font-weight: 700;
+    font-size: 42px;
+    color: #5f687b;
+  }
+  
+  .about .content ul li{
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 30px;
+    padding-right: 4px;
+    color: pink;
+  }
 }
 
 /*--------------------------------------------------------------
