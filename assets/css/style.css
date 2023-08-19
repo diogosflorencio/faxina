@@ -759,6 +759,9 @@ section {
   #msg{
     display: none;
   }
+  .about{
+    padding-bottom: 0px;
+  }
   
 }
 @media (min-width: 800px) {
