@@ -756,6 +756,9 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+  #msg{
+    display: none;
+  }
   
 }
 @media (min-width: 800px) {
