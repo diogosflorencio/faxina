@@ -743,7 +743,9 @@ section {
 }
 
 /*SOS*/
-
+.lista-sos{
+  color: #eaecef;
+}
 .lista-sos .sos {
   list-style: none;
   padding: 0;
@@ -753,10 +755,9 @@ section {
 }
 
 .lista-sos .sos li {
-  display: flex;
-  align-items: center;
+  display: inline-block; /* Alterado para inline-block */
   white-space: nowrap;
-  margin: 5px 10px; /* Espaçamento entre os itens */
+  margin: 5px; /* Espaçamento entre os itens */
   text-align: center; /* Centralizar o texto */
 }
 
@@ -764,51 +765,13 @@ section {
   margin-right: 10px; /* Espaçamento entre o ícone e o texto */
 }
 
+@media (max-width: 767px) {
+  .lista-sos .sos li {
+    width: 100%; /* Faz com que os itens ocupem a largura total quando a tela for pequena */
+    display: block; /* Volta a exibir como bloco para empilhamento em dispositivos pequenos */
+  }
+}
 
-.lista-sos{
-  color: #eaecef;
-}
-.sos-itens{
-  padding: 0px;
-}
-/*ocultar table de sos*/
-@media (min-width: 1201px) {
-  .sos-table{
-    display: none;
-  }  
-}
-/*ocultar table */
-@media (min-width: 460px) and (max-width: 1200px) {
-  .lista-sos{
-    display: a;
-  }
-  .sos-table {
-    width: 100%;
-    table-layout: fixed;
-  }
-  .sos-table td {
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    position: relative;
-  }
-  .sos-table .item:nth-child(1),
-  .sos-table .item:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .sos-table .item:nth-child(3),
-  .sos-table .item:nth-child(4) {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .sos-table .item:nth-child(5) {
-    position: relative;
-    margin: 0 auto;
-  }
-}
 
 @media (max-width: 992px) {
   .breadcrumbs {
