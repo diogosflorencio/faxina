@@ -36,7 +36,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: pink;
+  background: #805dbd;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -50,7 +50,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: pink;
+  background: #805dbd;
   color: #fff;
 }
 
@@ -84,7 +84,7 @@ h6 {
 }
 
 #header .logo a {
-  color: pink;
+  color: #422297e1;
 }
 
 #header .logo img {
@@ -155,7 +155,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: pink;
+  color: #805dbd;
 }
 
 .navbar .getstarted,
@@ -211,7 +211,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: pink;
+  color: #805dbd;
 }
 
 .navbar .dropdown:hover>ul {
@@ -314,7 +314,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: pink;
+  color: #805dbd;
 }
 
 .navbar-mobile .getstarted,
@@ -350,7 +350,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: pink;
+  color: #805dbd;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -453,7 +453,7 @@ section {
 }
 
 .featured-services .icon i {
-  color: pink;
+  color: #805dbd;
   font-size: 36px;
 }
 
@@ -473,7 +473,7 @@ section {
 }
 
 .featured-services .icon-box:hover .title a {
-  color: pink;
+  color: #805dbd;
 }
 
 .featured-services .description {
@@ -503,7 +503,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: pink;
+  color: #805dbd;
 }
 
 .about .content p:last-child {
@@ -522,7 +522,7 @@ section {
 .counts .counters span {
   font-size: 48px;
   display: block;
-  color: pink;
+  color: #805dbd;
   font-weight: 700;
 }
 
@@ -555,7 +555,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: pink;
+  color: #805dbd;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -582,7 +582,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-  color: pink;
+  color: #805dbd;
 }
 
 
@@ -590,7 +590,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: pink;
+  background: #805dbd;
   background-size: cover;
   padding: 60px 0;
 }
@@ -631,8 +631,8 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid pink;
-  border-bottom: 3px solid pink;
+  border-top: 3px solid #805dbd;
+  border-bottom: 3px solid #805dbd;
   padding: 30px;
   width: 100%;
   background-color: #f9f9fa;
@@ -640,7 +640,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: pink;
+  color: #805dbd;
   float: left;
   width: 44px;
   height: 44px;
@@ -687,14 +687,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: pink;
+  background: #805dbd;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: pink;
+  background: #805dbd;
   color: #fff;
 }
 
@@ -742,6 +742,57 @@ section {
   content: "/";
 }
 
+/*SOS*/
+
+.sos{
+
+  display: flex;
+}
+.lista-sos{
+  color: #eaecef;
+}
+.sos-itens{
+  padding: 10px;
+}
+/*ocultar table de sos*/
+@media (min-width: 1201px) {
+  .sos-table{
+    display: none;
+  }  
+}
+/*ocultar table */
+@media (min-width: 460px) and (max-width: 1200px) {
+  .lista-sos{
+    display: none;
+  }
+  .sos-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .sos-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    position: relative;
+  }
+  .sos-table .item:nth-child(1),
+  .sos-table .item:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .sos-table .item:nth-child(3),
+  .sos-table .item:nth-child(4) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .sos-table .item:nth-child(5) {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 58px;
@@ -771,8 +822,8 @@ section {
     display: inline;
   }
   .contact .info {
-    border-top: 3px solid pink;
-    border-bottom: 3px solid pink;
+    border-top: 3px solid #805dbd;
+    border-bottom: 3px solid #805dbd;
     padding: 30px;
     width: 100%;
     
@@ -797,7 +848,7 @@ section {
   .about .content ul i {
     font-size: 30px;
     padding-right: 4px;
-    color: pink;
+    color:#805dbd;
   }
 
 }
@@ -868,7 +919,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: pink;
+  background: #805dbd;
   color: #fff;
   text-decoration: none;
 }
