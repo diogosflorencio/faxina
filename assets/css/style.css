@@ -744,15 +744,32 @@ section {
 
 /*SOS*/
 
-.sos{
-
+.lista-sos .sos {
+  list-style: none;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.lista-sos .sos li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 5px 10px; /* Espaçamento entre os itens */
+  text-align: center; /* Centralizar o texto */
+}
+
+.lista-sos .sos li i {
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+
 .lista-sos{
   color: #eaecef;
 }
 .sos-itens{
-  padding: 10px;
+  padding: 0px;
 }
 /*ocultar table de sos*/
 @media (min-width: 1201px) {
@@ -763,7 +780,7 @@ section {
 /*ocultar table */
 @media (min-width: 460px) and (max-width: 1200px) {
   .lista-sos{
-    display: none;
+    display: a;
   }
   .sos-table {
     width: 100%;
