@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: rgb(235, 116, 136);
+  color: #805dbd;
   text-decoration: none;
 }
 
@@ -630,8 +630,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background:  #44237c;
-  border-color:  #1e044b;
+  background:  #6d42b8;
+  border-color:  #5c3c94;
 }
 
 
