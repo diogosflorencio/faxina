@@ -99,10 +99,13 @@ h6 {
   }
   .dropdown{
     display: flex;
+    
  
   }
   .dropdown-item{
-    position: relative;
+    position: absolute;
+    margin-right: 50px;
+    padding: 50px;
   }
   .sobre, .contato, .servicos{
     display: none;
