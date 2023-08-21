@@ -90,19 +90,37 @@ h6 {
 #header .logo img {
   max-height: 40px;
 }
-
+.dropdown{
+  display: none;
+}
 @media (max-width: 575px) {
   .mobile-nav-toggle {
     display: block;
   }
-  .sobre{
+  .dropdown{
+    display: flex;
+ 
+  }
+  .dropdown-item{
+    position: relative;
+  }
+  .sobre, .contato, .servicos{
     display: none;
   }
-  /*.navbar li a {
+  .navbar li a {
     padding: 4px;
-  }*/
+  }
+  #header .logo {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
   /* menu*/
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -262,7 +280,7 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 700px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -639,83 +657,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info {
-  border-top: 3px solid #805dbd;
-  border-bottom: 3px solid #805dbd;
-  padding: 30px;
-  width: 100%;
-  background-color: #f9f9fa;
-}
 
-.contact .info i {
-  font-size: 20px;
-  color: #805dbd;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #5f687b;
-}
-
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #949cac;
-}
-
-.contact .info .social-links {
-  padding-left: 60px;
-}
-
-.contact .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-
-.contact .info .social-links a:hover {
-  background: #805dbd;
-  color: #fff;
-}
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
-  background: #805dbd;
-  color: #fff;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -854,11 +796,81 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Contact redes sociais
 --------------------------------------------------------------*/
+.contact .info {
+  border-top: 3px solid #805dbd;
+  border-bottom: 3px solid #805dbd;
+  padding: 30px;
+  width: 100%;
+  background-color: #f9f9fa;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #805dbd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #5f687b;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #949cac;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #805dbd;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #805dbd;
+  color: #fff;
+}
+
+
+
+/* contact formulario*/
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #805dbd;
   border-bottom: 3px solid #805dbd;
   padding: 30px;
   background-color: #f9f9fa;
@@ -941,6 +953,10 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+iframe{
+  margin-top: 3%;
 }
 
 /*--------------------------------------------------------------
